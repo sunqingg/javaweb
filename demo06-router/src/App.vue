@@ -13,7 +13,7 @@ let showList = () =>{
 let showDetail = (id,language) =>{
   // router.push({path:"/list"})
   // router.push(`showDetail/${id}/${language}`)
-  // router.push(`showDetail/${id}/${language}`)
+  router.push(`/showDetail/${id}/${language}`)
   //  name
   // router.push({name:"showDetail",params:{id:id,language:language}})
     // {
@@ -23,7 +23,7 @@ let showDetail = (id,language) =>{
     // },
 
   //path
-  router.push({path:"/showDetail",query:{id:id,language:language}})
+  // router.push({path:"/showDetail",query:{id:id,language:language}})
     // {
     //   path:"/showDetail",
     //       component:ShowDetail
@@ -54,6 +54,7 @@ let showDetail = (id,language) =>{
     <router-view name="homeView"></router-view>
 
     ShowDetail： <router-view name="showDetail"></router-view>
+
 
   </div>
 </template>

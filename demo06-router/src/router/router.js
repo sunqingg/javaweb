@@ -37,12 +37,12 @@ let router = createRouter({
             name:'showDetail',
             component:ShowDetail
         },
-        {
-            path:"/showDetail",
-            components:{
-                showDetail:ShowDetail
-            }
-        }
+        // {
+        //     path:"/showDetail",
+        //     components:{
+        //         showDetail:ShowDetail
+        //     }
+        // }
     ]
 })
 
