@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            border: 2px solid red;
+            margin: 20px;
+            padding: 10px;
+
+        }
+        #div2 {
+            // div块在屏幕中居中
+            margin: 0px auto;
+            // div中字体居中
+            text-align: center;
+        }
+        span {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    // 线在 100px + 10px + 2px
+    <div>
+        <span>1</span>
+    </div>
+    <div id="div2">
+        <span>2</span>
+    </div>
+    <div>
+        <span>3</span>
+    </div>
+</body>
+</html>

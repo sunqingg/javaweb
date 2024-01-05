@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var blank = "&nbsp;";
+        for (var i=1;i<=9;i++) {
+            // for (var k=9;k>=i;K--){
+            //     blank += blank;
+            // }
+            for (var j=1;j<=i;j++){
+                document.write(blank + j+"*"+i+"="+i*j+"&nbsp;&nbsp;&nbsp;");
+            }
+            document.write("<hr>")
+        }
+function add(a,b){
+    return a+b;
+}
+
+var num = add(10,20)
+document.write(num);
+// console.log(num);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
