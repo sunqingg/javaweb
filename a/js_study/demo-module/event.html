@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        刚开始的时候为什么是空? 因为是先加载的js后加载的内容,所有要将下面3行代码加入到下面的函数中.
+         */
+        var btn1 =document.getElementById("btn1")
+        console.log(btn1)
+        console.log(btn1.innerText)
+        function over() {
+            console.log("鼠标放在上面了: onmouseover!!!")
+            var btn1 =document.getElementById("btn1")
+            console.log(btn1.innerText)
+        }
+        function menu1() {
+            console.log("在我上面点了右键是吧: oncontextmenu")
+        }
+        function enter1() {
+            console.log("移过来了: onmouseenter")
+        }
+        function press1() {
+            console.log("你千万别松开: onkeypress")
+        }
+        function testFocus() {
+            console.log("聚焦")
+        }
+        function testBlur() {
+            console.log("失去焦点")
+        }
+
+    </script>
+</head>
+<body>
+<button id="btn1" onmouseover="over()" oncontextmenu="menu1()" onmouseenter="enter1()" >按钮</button>
+<input type="text" onkeypress="press1()">
+<input type="text" onfocus="testFocus()" onblur="testBlur()">
+</body>
+</html>
